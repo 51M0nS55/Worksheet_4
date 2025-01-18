@@ -1,0 +1,3 @@
+Decimal: 235
+Hexadecimal: EB
+Binary: 11101011
