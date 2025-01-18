@@ -1,0 +1,30 @@
+if ! [[ "$decimal" =~ ^[0-9]+$ ]]; then
+    echo "Error: Input is not a valid number."
+    exit 1
+fi
+
+if (( decimal > 100000 )); then
+    echo "Error: Number exceeds the limit of 100000."
+    exit 1
+fi
+
+# Convert to hexadecimal and binary
+hexadecimal=$(echo "obase=16; $decimal" | bc)
+binary=$(echo "obase=2; $decimal" | bc)
+
+# Output results
+echo "Decimal: $decimal" > conversion_result.txt
+echo "Hexadecimal: $hexadecimal" >> conversion_result.txt
+echo "Binary: $binary" >> conversion_result.txt
+
+# Display results
+cat conversion_result.txt' > /root/Desktop/host/Problem_3/conversion_script.sh
+  494  chmod +x /root/Desktop/host/Problem_3/conversion_script.sh
+  495  /root/Desktop/host/Problem_3/conversion_script.sh
+  496  /root/Desktop/host/Problem_3/conversion_script.sh
+  497  cat /root/Desktop/host/Problem_3/conversion_result.txt
+  498  cd /root/Desktop/host/Problem_3
+  499  git add conversion_script.sh conversion_result.txt
+  500  git commit -m "Add conversion script and result"
+  501  git push origin main
+  502  history | tail -n 30 >> history.txt
