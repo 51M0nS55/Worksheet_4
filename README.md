@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-hello world!
-=======
-Hello World!
->>>>>>> Add README with Hello World message
+hello world from remote!
