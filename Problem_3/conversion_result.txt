@@ -1,3 +1,0 @@
-Decimal: 2789
-Hexadecimal: AE5
-Binary: 101011100101

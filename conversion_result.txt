@@ -1,3 +1,0 @@
-Decimal: 34567
-Hexadecimal: 8707
-Binary: 1000011100000111
